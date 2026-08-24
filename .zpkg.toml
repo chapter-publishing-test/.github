@@ -1,0 +1,33 @@
+[package]
+org = "chapter-publishing-test"
+name = ".github"
+version = "0.2.0"
+description = "Chapter Publishing .github repository"
+license = "MIT"
+
+[package.repository]
+vcs = "git"
+url = "https://github.com/chapter-publishing-test/.github"
+
+[install]
+dir = ".vendor/zed"
+
+[lifecycle]
+pre_install = ".zed/pre-install"
+post_install = ".zed/post-install"
+pre_build = ".zed/pre-build"
+post_build = ".zed/post-build"
+pre_test = ".zed/pre-test"
+post_test = ".zed/post-test"
+pre_publish = ".zed/pre-publish"
+post_publish = ".zed/post-publish"
+
+[publish]
+include_readme = true
+tag_format = "v{version}"
+exclude = [".git/**", ".github/**", ".zed/**", ".zpkg.lock", ".zpkg-pack/**", "zed_modules/**", ".vendor/**", "**/target/**", "**/build/**", "**/node_modules/**", "**/.dart_tool/**", "**/*.log", "env/dec/**"]
+smoke_test = "python3 "$ZED_PKG_TEST_TARGET/scripts/chptr_quality.py""
+
+[targets.repository]
+dir = "."
+adapter = "none"

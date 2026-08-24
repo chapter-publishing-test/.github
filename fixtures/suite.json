@@ -1,0 +1,11 @@
+{
+  "assertions": [
+    "canonical-contract",
+    "negative-fixtures",
+    "telemetry-boundary",
+    "zed-lifecycle"
+  ],
+  "repository": ".github",
+  "sourceOrganization": "chapter-publishing",
+  "syntheticOnly": true
+}
