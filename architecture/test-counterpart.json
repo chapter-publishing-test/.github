@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "status": "active",
+  "testOwner": {"login": "chapter-publishing-test", "id": 319221788, "type": "Organization"},
+  "productionOwner": {"login": "chapter-publishing", "id": 317760501, "type": "Organization"},
+  "discoveryScope": {"kind": "organization-current-tips"},
+  "relationshipRegistry": "architecture/repository-relationships.json",
+  "policy": {"suffixInferenceAuthoritative": false, "bindExactDefaultBranchSha": true, "failClosedOnInvisiblePrivateSources": true, "silentPublicFallbackAllowed": false}
+}
